@@ -1,17 +1,15 @@
-import React, { useReducer, useState, useEffect } from "react";
+import React, { useReducer } from "react";
 import {
   Box,
   Typography,
   Button,
   Backdrop,
-  TextField,
   OutlinedInput,
   InputAdornment,
   IconButton,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import ListSpaces from "./ListSpaces";
-import uniqid from "uniqid";
 import CreateSpace from "./CreateSpace";
 import SearchIcon from "@mui/icons-material/Search";
 

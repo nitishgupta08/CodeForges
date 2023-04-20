@@ -46,6 +46,7 @@ export default function Editor({
       type: "updateFileData",
       payload: viewUpdate.state.toJSON().doc,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -53,6 +54,7 @@ export default function Editor({
       type: "updateCursorPosition",
       payload: pos,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pos]);
 
   return (

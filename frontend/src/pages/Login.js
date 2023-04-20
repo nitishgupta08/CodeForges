@@ -165,7 +165,7 @@ function Login() {
               <Button
                 variant="text"
                 sx={{ height: "45px", textDecoration: "underline" }}
-                // startIcon={<PersonAddIcon />}
+
                 onClick={() => navigate("/register")}
               >
                 Register

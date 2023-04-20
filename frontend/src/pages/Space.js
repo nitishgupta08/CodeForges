@@ -92,7 +92,7 @@ function Space() {
     console.log(spaceData);
     try {
       if (state.spaceData.length > 0) {
-        const res = await axiosConfig.put(
+        await axiosConfig.put(
           `/spaces/${location.pathname.split("/")[2]}`,
           { spaceData: spaceData },
           {
@@ -120,6 +120,8 @@ function Space() {
     }, 60000);
 
     return () => clearInterval(intervalId);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.spaceData]);
 
   return (

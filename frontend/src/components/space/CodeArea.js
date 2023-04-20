@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from "react";
+import { useEffect, useReducer } from "react";
 import { Box } from "@mui/material";
 import CodeSettings from "./CodeSettings";
 import Editor from "./Editor";
@@ -43,6 +43,8 @@ export default function CodeArea({
 
   useEffect(() => {
     dispatch({ type: "updateTheme", payload: auth.user.theme });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -67,6 +69,7 @@ export default function CodeArea({
         payload: updatedArray,
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.fileData]);
 
   return (

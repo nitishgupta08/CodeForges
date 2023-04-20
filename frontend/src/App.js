@@ -15,12 +15,6 @@ function App() {
     },
   });
 
-  const lightTheme = createTheme({
-    palette: {
-      mode: "light",
-    },
-  });
-
   return (
     <>
       <ThemeProvider theme={darkTheme}>

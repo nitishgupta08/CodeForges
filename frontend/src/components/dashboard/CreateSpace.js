@@ -20,6 +20,7 @@ export default function CreateSpace({
       const id = uuidv4();
       dispatch({ type: "updateSpaceId", payload: id });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showCreateSpaceBackdrop]);
 
   const handleCreate = () => {

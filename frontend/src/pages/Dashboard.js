@@ -73,6 +73,7 @@ function Dashboard() {
     if (!localUser) {
       setLocalUser(auth);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [localUser]);
 
   useEffect(() => {
@@ -89,6 +90,7 @@ function Dashboard() {
 
     dispatch({ type: "updateListSpaces", payload: response.data });
     dispatch({ type: "updateOrginalSpaces", payload: response.data });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [response]);
 
   const handleLogout = () => {
