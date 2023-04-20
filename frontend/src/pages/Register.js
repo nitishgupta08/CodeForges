@@ -91,7 +91,7 @@ function Register() {
           sx={{
             minWidth: "30vw",
             backgroundColor: "grey.900",
-            borderRadius: 4,
+            borderRadius: 2,
             display: "flex",
             flexDirection: "column",
             p: 3,

@@ -70,7 +70,7 @@ const getUser = (req, res) => {
  * */
 const updateUser = async (req, res) => {
   const newDetails = req.body;
-  console.log(newDetails);
+
   try {
     await User.updateOne(req.user, { $set: newDetails });
     res.send({ data: "Success!", title: "Details updated" });
